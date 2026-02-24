@@ -18,7 +18,7 @@ end
 
 function score = computeScore(state)
 %COMPUTESCORE FeatureB scoring rule: square-ish boost
-gain = 3;
+gain = 4;
 score = gain * state + state^2;
 
 % parity bonus
