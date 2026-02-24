@@ -17,6 +17,7 @@ fprintf("demo: n=%d state=%d score=%d\n", n, state, score);
 end
 
 function score = computeScore(state)
-%COMPUTESCORE Basic scoring rule
-score = 2 * state;
+%COMPUTESCORE FeatureA scoring rule: baseline plus offset
+offset = 10;
+score = 2 * state + offset;
 end
