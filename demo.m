@@ -17,6 +17,7 @@ fprintf("demo: n=%d state=%d score=%d\n", n, state, score);
 end
 
 function score = computeScore(state)
-%COMPUTESCORE Basic scoring rule
-score = 2 * state;
+%COMPUTESCORE FeatureB scoring rule: square-ish boost
+gain = 3;
+score = gain * state + state^2;
 end
