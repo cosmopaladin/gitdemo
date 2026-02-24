@@ -11,7 +11,12 @@ for i = 1:n
     state = state + i;
 end
 
-score = state;
+score = computeScore(state);
 
 fprintf("demo: n=%d state=%d score=%d\n", n, state, score);
+end
+
+function score = computeScore(state)
+%COMPUTESCORE Basic scoring rule
+score = state;
 end
