@@ -18,7 +18,7 @@ end
 
 function score = computeScore(state)
 %COMPUTESCORE FeatureA scoring rule: baseline plus offset
-offset = 10;
+offset = 7;
 score = 2 * state + offset;
 
 % clamp to avoid runaway scores
