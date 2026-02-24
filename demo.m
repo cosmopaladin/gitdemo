@@ -18,5 +18,5 @@ end
 
 function score = computeScore(state)
 %COMPUTESCORE Basic scoring rule
-score = state;
+score = 2 * state;
 end
